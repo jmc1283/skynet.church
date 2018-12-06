@@ -45,6 +45,33 @@ navbar {
     border: #aa0000;
 }
 
+.navbar-title {
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-title:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar-item {
+    background-color: grey;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.navbar-item:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .well {
     background-color: #505050;
 }

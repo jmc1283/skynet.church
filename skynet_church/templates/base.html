@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ url_for('index') }}" id="index-nav">skynet.church</a>
+        <a class="navbar-title" href="{{ url_for('index') }}" id="index-nav">skynet.church</a>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item">
@@ -23,17 +23,10 @@
             <ul class="nav navbar-nav ml-auto">
                 {% if current_user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="navbar-brand">{{ current_user.name }}</a>
+                    <a class="navbar-item" id="profile-nav" href="{{ url_for('profile') }}">{{ current_user.username }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" id="profile-nav" href="{{ url_for('profile') }}">Profile</a>
-                </li>
-                <li id="logout-nav">
-                    <a href="{{ url_for('auth.logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-                </li class="nav-item">
-                {% else %}
-                <li class="nav-item">
-                    <a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    <a class="navbar-item" id="logout-nav" href="{{ url_for('auth.logout') }}">Log Out</a>
                 </li>
                 {% endif %}
             </ul>
