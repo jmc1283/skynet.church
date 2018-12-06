@@ -1,5 +1,13 @@
-# flasq
-For when you need a quick flask app, but are too lazy to write the basics.
+# skynet.church
 
-# Author
-John Cunniff | big_J
+The way of the church is the way of the people
+
+---
+
+Censorship is bad.
+
+Communities where all people can express themselves and feel safe are good.
+
+Share, spread the love, and enjoy.
+
+ -- The Team
