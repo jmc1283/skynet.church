@@ -4,14 +4,14 @@ from wtforms.validators import Required
 
 
 class RegistrationForm(FlaskForm):
-    username = TextField("Username", validators=[Required()])
-    password = PasswordField("A Password", validators=[Required()])
+    username = TextField("", validators=[Required()], render_kw={"placeholder": "Username"})
+    password = PasswordField("", validators=[Required()], render_kw={"placeholder": "Password"})
 
-    submit = SubmitField("Register")
+    submit = SubmitField("Sign Up")
 
 
 class LoginForm(FlaskForm):
-    username = TextField("Username", validators=[Required()])
-    password = PasswordField("Password", validators=[Required()])
+    username = TextField("", validators=[Required()], render_kw={"placeholder": "Username"})
+    password = PasswordField("", validators=[Required()], render_kw={"placeholder": "Password"})
 
     submit = SubmitField("Login")

@@ -1,9 +1,27 @@
 {%- extends "base.html" %}
 
 {% block content %}
-    <div class="container">
-    </div>
-    <hr/>
-    <div class="container">
-    </div>
+    {% if current_user.is_authenticated %}
+        <div class="container">
+        </div>
+        <hr/>
+        <div class="container">
+        </div>
+        {% else %}
+        <hr/>
+        <div>
+            <h1 style="color: #bbbbbb; text-align: center;">Welcome to skynet.church</h1>
+        </div>
+        <hr/>
+        <div style="text-align: center;">
+            <div>
+                <input type="button" class="button" onclick="location.href='/login';" value="Log In" />
+            </div>
+            <hr/>
+            <div>
+                <input type="button" class="button" onclick="location.href='/register';" value="Sign Up" />
+            </div>
+        </div>
+
+        {% endif %}
 {%- endblock %}

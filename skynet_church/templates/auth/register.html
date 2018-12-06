@@ -4,21 +4,19 @@
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
-			<div class="jumbotron">
-				<h1>Register</h1>
+			<h1 style="color: #bbbbbb;">Sign Up</h1>
 
-				{%- with messages = get_flashed_messages() %}
-				{%- if messages %}
-				<div class="alert alert-danger" role="alert">
-					{% for message in messages %}
-					{{ message }}
-					{% endfor %}
-				</div>
-				{%- endif %}
-				{%- endwith %}
-
-				{{ render_form(form) }}
+			{%- with messages = get_flashed_messages() %}
+			{%- if messages %}
+			<div class="alert alert-danger" role="alert">
+				{% for message in messages %}
+				{{ message }}
+				{% endfor %}
 			</div>
+			{%- endif %}
+			{%- endwith %}
+
+			{{ render_form(form) }}
 		</div>
 		<div class="col-sm-4"></div>
     </div>

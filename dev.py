@@ -2,4 +2,4 @@
 
 from skynet_church import app, db
 db.create_all()
-app.run()
+app.run(debug=True)
