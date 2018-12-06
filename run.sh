@@ -1,7 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-
-[ -d ./env ] || ./setup.sh
-
-source ./env/bin/activate
-python ./app.py
+python3 ./app.py
