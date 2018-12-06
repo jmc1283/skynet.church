@@ -12,6 +12,7 @@ Bootstrap(app)
 
 db = SQLAlchemy(app)
 
+# Register modules
 from .auth import auth
 app.register_blueprint(auth)
 

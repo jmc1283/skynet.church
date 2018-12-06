@@ -22,7 +22,6 @@ class User(db.Model, UserMixin):
 class Image(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     uploader = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    orig_path = db.Column(db.String(4095))
-    thumb_path = db.Column(db.String(4095))
+    path = db.Column(db.String(4095))
 
     user = db.relationship('User', backref=db.backref('images'))
