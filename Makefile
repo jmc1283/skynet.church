@@ -8,4 +8,5 @@ setup:
 	pip3 install -r requirements.txt --user
 
 clean:
-	rm *.pyc
+	rm -f *.pyc
+	rm -rf skynet_church/__pycache__
