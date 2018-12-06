@@ -1,1 +1,6 @@
+bootstrap-flask
 flask
+flask-login
+flask-sqlalchemy
+flask-wtf
+pillow
